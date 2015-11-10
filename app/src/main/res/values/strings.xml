@@ -1,0 +1,42 @@
+<resources>
+    <string name="name_project">Quick Help!</string>
+    <string name="app_name">ProjetoFG</string>
+    <string name="login">Login</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="msg_login">Usuário ou senha não conferem.</string>
+    <string name="cadastro">Cadastro de Usuário</string>
+    <string name="nome">Nome Completo*</string>
+    <string name="cpf">CPF* (Somente números)</string>
+    <string name="data_nasc">Data de Nascimento*</string>
+    <string name="selecione">Selecione</string>
+    <string name="sexo">Sexo*</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="telefone">Telefone* ( apenas números com DDD (2 dígitos))</string>
+    <string name="mail">E-mail*</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="tipo">Tipo</string>
+    <string name="rh">RH</string>
+    <string name="msgCadastroComplementar">
+        O cadastro comlementar não é obrigatório, entretanto, agiliza o atendimento
+        caso o chamado/ocorrência seja para o próprio usuário que pede. Assim o SAMU
+        poderá levá-lo a um hospital de seu plano de saúde.
+    </string>
+    <string name="configuracoes">Configurações</string>
+    <string name="msg_obrigacao">* significa que o campo é obrigatório</string>
+    <string name="msg_tbt">Ativar código PIN que será usado para confirmar envio de solicitação de um chamado.</string>
+    <string name="msg_edita">Confira bem seus dados antes de salvar!</string>
+
+    <string-array name="tp_sangue">
+        <item>A</item>
+        <item>O</item>
+        <item>B</item>
+        <item>AB</item>
+    </string-array>
+
+    <string-array name="fator_rh">
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+</resources>

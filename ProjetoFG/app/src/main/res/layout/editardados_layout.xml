@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/branco">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="EDITE SEUS DADOS"
+        android:textColor="@color/preto"
+        android:textStyle="bold"/>
+
+    //editar nome
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="20px"
+        android:textStyle="bold"
+        android:textColor="@color/preto"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="10px"/>
+    <EditText
+        android:id="@+id/nome_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinzaEscuro"
+        android:singleLine="true"
+        android:inputType="text" />
+
+</LinearLayout>

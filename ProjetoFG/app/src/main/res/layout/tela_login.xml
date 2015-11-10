@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    //Plano de fundo
+    <ImageView
+        android:layout_height="626dp"
+        android:layout_width="500dp"
+        android:id="@+id/imagem_logo"
+        android:src="@drawable/logo_app"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    //Nome do app
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_project"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/vermelhoEscuro"
+        android:layout_gravity="center_horizontal|top"/>
+
+    //Login
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/vermelhoEscuro"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"/>
+
+    //receber usuário de login
+    <TextView
+        android:text="@string/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="50px"
+        android:layout_marginBottom="360px"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/usuario_login"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="300px"
+        android:background="@color/cinzaEscuro"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:layout_marginLeft="25px"/>
+
+    //receber senha de login
+    <TextView
+        android:text="@string/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="50px"
+        android:layout_marginBottom="255px"/>
+    <EditText
+        android:id="@+id/senha_login"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="200px"
+        android:background="@color/cinzaEscuro"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:maxLength="8"
+        android:layout_marginLeft="25px" />
+
+    //entrar
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="ENTRAR"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="140px"
+        android:clickable="true"
+        android:onClick="logar"/>
+
+    //cadastrar
+    <TextView
+        android:id="@+id/cadastro_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="CADASTRAR"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="90px"
+        android:clickable="true"
+        android:onClick="cadastrar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/esqueci_senha"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Esqueci a Senha"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="37px"
+        android:clickable="true"
+        android:onClick="esquecerSenha"/>
+</FrameLayout>

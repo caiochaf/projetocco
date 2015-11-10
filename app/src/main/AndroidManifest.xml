@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projeto.treino.app.com.br.projetofg">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@drawable/icone_app" android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        //activity de login
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        //activity de cadastro de cliente
+        <activity android:name=".CadastroUserActivity">
+        </activity>
+
+        //activity tela principal
+        <activity android:name=".TelaPrincipalActivity">
+        </activity>
+
+        //activity para você (chamado)
+        <activity android:name=".ParaVoceActivity">
+        </activity>
+
+        //activity para outro (chamado)
+        <activity android:name=".ParaOutroActivity">
+        </activity>
+
+        //activity de configurações
+        <activity android:name=".ConfiguracoesActivity">
+        </activity>
+
+        //activity Editar Dados
+        <activity android:name=".EditarDadosActivity">
+        </activity>
+
+        //activity esquecer senha
+        <activity android:name=".EsquecerSenhaActivity">
+        </activity>
+    </application>
+
+</manifest>
