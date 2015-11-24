@@ -34,7 +34,7 @@ public class CadastroUserActivity extends Activity {
         data = (Button) findViewById(R.id.btn_data);
         data.setText(dia + "/" + (mes+1) + "/" + ano);
 
-        //adaptador para o spinner do tipo sanguinei
+        //adaptador para o spinner do tipo sanguineio
         ArrayAdapter<CharSequence> adapterSangue =
                 ArrayAdapter.createFromResource(this, R.array.tp_sangue,
                         android.R.layout.simple_spinner_item);
@@ -71,4 +71,9 @@ public class CadastroUserActivity extends Activity {
                     data.setText(dia + "/" + (mes+1) + "/" + ano);
                 }
             };
+
+    public void gravarBanco(){
+
+
+    }
 }
