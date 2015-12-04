@@ -80,7 +80,7 @@
                 android:layout_marginTop="15px"
                 android:layout_marginLeft="10px"/>
             <EditText
-                android:id="@+id/senha_confirma"
+                android:id="@+id/confirma_senha_cadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/cinzaEscuro"
@@ -109,6 +109,7 @@
                 android:maxLength="11"/>
 
             //selecinar a data de nascimento
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -153,19 +154,22 @@
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:id="@+id/rb_check">
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/feminino"
-                        android:textColor="@color/preto"/>
+                        android:textColor="@color/preto"
+                        android:id="@+id/rb_feminino"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/masculino"
-                        android:textColor="@color/preto"/>
+                        android:textColor="@color/preto"
+                        android:id="@+id/rb_masculino"/>
 
                 </RadioGroup>
             </LinearLayout>
@@ -344,7 +348,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cadastrar"
                 android:layout_marginTop="15px"
-                android:onClick="gravarBanco"/>
+                android:onClick="btCadastrar"/>
 
         </LinearLayout>
     </ScrollView>

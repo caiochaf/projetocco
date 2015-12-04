@@ -1,4 +1,4 @@
-package projeto.treino.app.com.br.projetofg.banco;
+package projeto.treino.app.com.br.projetofg;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

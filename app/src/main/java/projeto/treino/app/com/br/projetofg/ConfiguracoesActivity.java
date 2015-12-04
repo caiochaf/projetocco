@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 /**
@@ -51,5 +52,9 @@ public class ConfiguracoesActivity extends Activity
 
     public void telaEditar(View view){
         startActivity(new Intent(this, EditarDadosActivity.class));
+    }
+
+    public void btDeletar(View view) {
+
     }
 }

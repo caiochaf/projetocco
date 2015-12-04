@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import projeto.treino.app.com.br.projetofg.R;
 
@@ -25,10 +26,16 @@ public class InsereDados extends Activity {
             @Override
             public void onClick(View v) {
                 BancoController crud = new BancoController(getBaseContext());
-                EditText nome = (EditText)findViewById(R.id.nome_cadastro);
-                EditText senha = (EditText)findViewById((R.id.senha_cadastro));
+                EditText nome = (EditText) findViewById(R.id.nome_cadastro);
+                EditText senha = (EditText) findViewById((R.id.senha_cadastro));
                 String nomeString = nome.getText().toString();
                 String senhaString = senha.getText().toString();
+
+                String resultado;
+
+                resultado = crud.insereDado(nomeString, senhaString);
+
+                Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
             }
         });

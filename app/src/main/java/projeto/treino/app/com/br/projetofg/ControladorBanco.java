@@ -1,10 +1,8 @@
-package projeto.treino.app.com.br.projetofg.banco;
+package projeto.treino.app.com.br.projetofg;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-
-import projeto.treino.app.com.br.projetofg.banco.CriaBanco;
 
 /**
  * Created by Caio on 17/11/2015.

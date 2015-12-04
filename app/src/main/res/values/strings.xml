@@ -19,8 +19,8 @@
     <string name="tipo">Tipo</string>
     <string name="rh">RH</string>
     <string name="msgCadastroComplementar">
-        O cadastro comlementar não é obrigatório, entretanto, agiliza o atendimento
-        caso o chamado/ocorrência seja para o próprio usuário que pede. Assim o SAMU
+        O cadastro complementar não é obrigatório, entretanto, agiliza o atendimento
+        caso o chamado/ocorrência seja para o próprio usuário. Assim o SAMU
         poderá levá-lo a um hospital de seu plano de saúde.
     </string>
     <string name="configuracoes">Configurações</string>
