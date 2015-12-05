@@ -42,6 +42,7 @@ public class CadastroUserActivity extends Activity {
     private Spinner fatorRH;
     private EditText numeroPlano;
     private EditText numeroCarteira;
+    Usuario usuario = new Usuario();
 
 
     /**
@@ -127,6 +128,14 @@ public class CadastroUserActivity extends Activity {
             };
 
 
+
+    public void btSexoF(View view){
+        sexo = "f";
+    }
+        public void btSexoM(View view){
+        sexo = "m";
+    }
+
     public void btCadastrar(View view) {
 
         //variaveis para checagem dos campos e preenchimento do objeto Usuário.
@@ -147,7 +156,7 @@ public class CadastroUserActivity extends Activity {
         if (isEmpty(checaNome)) {
             alert(this, "Campo Nome não Preenchido!");
         }else if(isEmpty(checaSenha1)) {
-            alert(this, "Campo Senha não Preenchida!");
+            alert(this, "Campo Senha não Preenchido!");
         }else if (checaSenha1.equals(checaSenha2)){  //checa se a senha é a mesma do campo anterior.
             alert(this, "Senha não confere!");
         } else if(isEmpty(checaCpf)){
@@ -176,8 +185,7 @@ public class CadastroUserActivity extends Activity {
             //  Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
             //coloca os dados no objeto usuario para ser enviado para o banco.
-            Usuario usuario = new Usuario();
-            
+
             usuario.setNOME(checaNome);
             usuario.setSENHA(checaSenha1);
             usuario.setCPF(checaCpf);

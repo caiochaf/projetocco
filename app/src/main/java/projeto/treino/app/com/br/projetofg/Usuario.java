@@ -18,9 +18,7 @@ public class Usuario {
     private String PLANO;
     private String NUMERO_CARTEIRA;
 
-    public String getNOME(String NOME) {
-        return NOME;
-    }
+    public String getNOME() { return NOME; }
 
     public void setNOME(String NOME) {
         this.NOME = NOME;
@@ -41,7 +39,6 @@ public class Usuario {
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
-
 
     public String getSEXO() {
         return SEXO;
@@ -106,4 +103,6 @@ public class Usuario {
     public void setDATA(Date DATA) {
         this.DATA = DATA;
     }
+
+
 }

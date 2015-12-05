@@ -17,6 +17,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private EditText usuario;
     private EditText senha;
 
+    Usuario loginUsuario = new Usuario();
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -31,6 +32,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
         String user = usuario.getText().toString();
         String pass = senha.getText().toString();
+        String checaUser = loginUsuario.getNOME();
+        String checaPass = loginUsuario.getSENHA();
 
         if(isEmpty(user)){
             alert(this, "Informe o login!");
@@ -38,7 +41,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         }else if(isEmpty(pass)){
             alert(this, "Informe a senha!");
             return;
-        }else if("leitor".equals(user) && "123".equals(pass)){
+        }else if(checaUser.equals(user) && checaPass.equals(pass)){
                 startActivity(new Intent(this, TelaPrincipalActivity.class));
         }else{
             String msg = getString(R.string.msg_login);
