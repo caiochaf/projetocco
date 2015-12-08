@@ -56,5 +56,7 @@ public class ConfiguracoesActivity extends Activity
 
     public void btDeletar(View view) {
 
+        // crud de deletar conta
+
     }
 }

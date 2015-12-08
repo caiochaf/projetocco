@@ -1,6 +1,7 @@
 package projeto.treino.app.com.br.projetofg;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -22,6 +23,8 @@ public class ParaOutroActivity extends Activity implements CompoundButton.OnChec
     private TextView paraTransito;
 
     private RadioButton transito, aquatico, domestico, outro;//varíaveis radio button
+
+    Ocorrencia ocorrencia = new Ocorrencia();
 
 
     public void onCreate(Bundle savedInstanceState) {//método onCreate da classe
@@ -188,4 +191,13 @@ public class ParaOutroActivity extends Activity implements CompoundButton.OnChec
             paraTransito.setVisibility(View.GONE);
         }
     }
+
+    public void btEnviar (View view){
+
+
+        // aqui começa o CRUD de cadastrar ocorrência.
+
+        startActivity(new Intent(this, TelaPrincipalActivity.class));
+    }
+
  }

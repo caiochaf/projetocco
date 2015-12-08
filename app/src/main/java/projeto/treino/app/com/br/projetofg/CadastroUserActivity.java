@@ -129,11 +129,23 @@ public class CadastroUserActivity extends Activity {
 
 
 
-    public void btSexoF(View view){
-        sexo = "f";
-    }
-        public void btSexoM(View view){
-        sexo = "m";
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.rb_feminino:
+                if (checked)
+                    sexo = "f";
+                    // Feminino
+                    break;
+            case R.id.rb_masculino:
+                if (checked)
+                    sexo = "m";
+                    // Masculino
+                    break;
+        }
     }
 
     public void btCadastrar(View view) {
@@ -157,32 +169,20 @@ public class CadastroUserActivity extends Activity {
             alert(this, "Campo Nome não Preenchido!");
         }else if(isEmpty(checaSenha1)) {
             alert(this, "Campo Senha não Preenchido!");
-        }else if (checaSenha1.equals(checaSenha2)){  //checa se a senha é a mesma do campo anterior.
+        }else if (checaSenha2.equals(checaSenha1)){  //checa se a senha é a mesma do campo anterior.
             alert(this, "Senha não confere!");
         } else if(isEmpty(checaCpf)){
             alert(this, "Campo CPF não Preenchido!");
         }//else if (isEmpty(checaData)){  alert(this, "Data não Preenchida!");            }
-        //else if (isEmpity(sexo)){  alert(this, "Campo Sexo não selecionado");           }
+        else if (isEmpty(sexo)){  alert(this, "Campo Sexo não selecionado");           }
         else if(isEmpty(checaTelefone)){
             alert(this, "Campo Telefone não Preenchido");
         }else if(isEmpty(checaMail1)){
             alert(this, "Campo Email não Preenchido");
-        }else if (checaMail1.equals(checaMail2) ){  // checa se o email é o mesmo do campo anterior.
+        }else if (checaMail2.equals(checaMail1) ){  // checa se o email é o mesmo do campo anterior.
             alert(this, "Email não confere!");
         }else {
 
-
-            // BancoController crud = new BancoController(getBaseContext());
-            //    EditText nome = (EditText) findViewById(R.id.nome_cadastro);
-            //    EditText senha = (EditText) findViewById((R.id.senha_cadastro));
-            //    String nomeString = nome.getText().toString();
-            //   String senhaString = senha.getText().toString();
-
-            //   String resultado;
-
-            //   resultado = crud.insereDado(nomeString, senhaString);
-
-            //  Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
             //coloca os dados no objeto usuario para ser enviado para o banco.
 
@@ -198,7 +198,7 @@ public class CadastroUserActivity extends Activity {
             usuario.setPLANO(plano);
             usuario.setNUMERO_CARTEIRA(carteira);
 
-            // aqui começa o CRUD:
+            // aqui começa o CRUD de cadastrar o usuario
 
 
             startActivity(new Intent(this, LoginActivity.class));

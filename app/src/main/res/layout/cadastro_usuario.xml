@@ -151,7 +151,7 @@
                     android:layout_marginTop="15px"
                     android:layout_marginLeft="10px"/>
 
-                <RadioGroup
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -163,7 +163,7 @@
                         android:text="@string/feminino"
                         android:textColor="@color/preto"
                         android:id="@+id/rb_feminino"
-                        android:onClick="btSexoF" />
+                        android:onClick="onRadioButtonClicked" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -171,7 +171,7 @@
                         android:text="@string/masculino"
                         android:textColor="@color/preto"
                         android:id="@+id/rb_masculino"
-                        android:onClick="btSexoM" />
+                        android:onClick="onRadioButtonClicked" />
 
                 </RadioGroup>
             </LinearLayout>
